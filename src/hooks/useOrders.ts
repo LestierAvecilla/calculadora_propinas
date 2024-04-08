@@ -29,7 +29,8 @@ export default function useOrder () {
         }
 
         const placeOrder = () => {
-            console.log('Orden guardada')
+            setOrder([])
+            setTip(0)
         }
 
     return {

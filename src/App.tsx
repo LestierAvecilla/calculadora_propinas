@@ -38,21 +38,29 @@ function App() {
           </div>
 
           <div className="border border-dashed border-slate-300 p-5 rounded-lg space-y-10">
-             <OrderContents
+            {order.length > 0 ? (
+              <>
+              <OrderContents
              order={order}
              removeItem={removeItem}
              />
 
               <TipPrecentangeForm 
                 setTip={setTip}
+                tip={tip}
               />
 
              <OrdersTotals 
               order={order}
               tip={tip}
-              //place={placeOrder}
+              placeOrder={placeOrder}
 
              />
+              </>
+            ): (
+              <p className=" text-center">No hay elementos en la orden</p>
+            )}
+             
           </div>
 
        </main>
