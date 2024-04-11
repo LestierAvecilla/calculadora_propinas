@@ -13,15 +13,15 @@ function App() {
   return (
     <>
        <header className=" bg-teal-400 py-5">
-         <h1 className=" text-center text-4xl font-black">Calculadora de propinas y consumo</h1>
+         <h1 className=" text-center text-4xl font-black animate-fade-in-up">Calculadora de propinas y consumo</h1>
        </header>
 
-       <main className=" max-w-6xl mx-auto py-20 grid grid-cols-2">
+       <main className=" max-w-6xl mx-auto py-20 grid grid-cols-2 animate-fade-in-up">
 
           <div className="p-5">
           <h2 className=" text-4xl font-black">Menú</h2>
 
-          <div className="space-y-3 mt-10">
+          <div className="space-y-3 mt-10 animate-fade-in-up">
        
 
           {menuItems.map(item => (
@@ -37,7 +37,7 @@ function App() {
 
           </div>
 
-          <div className="border border-dashed border-slate-300 p-5 rounded-lg space-y-10">
+          <div className="border border-dashed border-slate-300 p-5 rounded-lg space-y-10 animate-fade-in-up">
             {order.length > 0 ? (
               <>
               <OrderContents

@@ -26,7 +26,7 @@ type TipPrecentangeForm = {
 
 export default function TipPrecentangeForm({setTip, tip} : TipPrecentangeForm) {
   return (
-    <div>
+    <div className="animate-fade-in-up">
         <h3 className=" font-black text-2xl">Propina: </h3>
             <form >
                 { tipOptions.map(tipOption =>(

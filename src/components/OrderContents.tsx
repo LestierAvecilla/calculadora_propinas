@@ -9,13 +9,13 @@ type OrderContentsProps = {
 
 export default function OrderContents({order, removeItem} : OrderContentsProps) {
   return (
-    <div>
+    <div className="animate-fade-in-up">
         <h2 className=' font-black text-4xl'>Consumo</h2>
 
         <div className=" space-y-3 mt-10<">
             {order.map(item => (
                     <div key={item.id}
-                        className=" flex justify-between items-center border-t border-gray-200 py-5 last-of-type:border-b"
+                        className=" flex justify-between items-center border-t border-gray-200 py-5 last-of-type:border-b animate-fade-in-up"
                     >
                         <div>
                         <p className=" text-lg">
